@@ -13,8 +13,9 @@ p {
   margin: 25px;
   font-family: BlenderProMedium;
 }
-.iframe_container {
+.youtube_embed {
   justify-content: center;
+  align-items: center;
   width:  1190px;
   height:  669px;
   overflow:  auto;
