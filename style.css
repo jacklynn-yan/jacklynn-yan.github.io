@@ -1,0 +1,20 @@
+@font-face { font-family: BlenderProBold; src: url('/font/BlenderPro-Bold.ttf'); } 
+@font-face { font-family: BlenderProMedium; src: url('/font/BlenderPro-Medium.ttf'); } 
+h1 {
+  font-family: BlenderProBold;
+  text-align: center;
+}
+h2 {
+  font-family: BlenderProBold;
+  text-align: center;
+}
+p {
+  padding: 8px;
+  margin: 25px;
+  
+  /* other styling */
+  background-color: #33475b;
+  border-radius: 10px;
+  color: white;
+  font-family: BlenderProMedium;
+}
