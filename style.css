@@ -1,12 +1,7 @@
 @font-face { font-family: BlenderProBold; src: url('/font/BlenderPro-Bold.ttf'); } 
 @font-face { font-family: BlenderProMedium; src: url('/font/BlenderPro-Medium.ttf'); } 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  height: 100vh;
-  background-color: #f1fff1;
+  background-color: #f1f1f1;
 }
 h1 {
   font-family: BlenderProBold;
