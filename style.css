@@ -11,10 +11,11 @@ h2 {
 p {
   padding: 8px;
   margin: 25px;
-  
-  /* other styling */
-  background-color: #33475b;
-  border-radius: 10px;
-  color: white;
   font-family: BlenderProMedium;
+}
+.iframe_container {
+  text-align: center;
+  width:  300px;
+  height:  200px;
+  overflow:  auto;
 }
