@@ -1,12 +1,24 @@
 @font-face { font-family: BlenderProBold; src: url('/font/BlenderPro-Bold.ttf'); } 
 @font-face { font-family: BlenderProMedium; src: url('/font/BlenderPro-Medium.ttf'); } 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: #f1fff1;
+}
 h1 {
+  font-family: BlenderProBold;
+  text-align: center;
+}
+h2 {
   font-family: BlenderProBold;
   text-align: center;
 }
 h3 {
   font-family: BlenderProBold;
-  text-align: center;
+  text-align: left;
 }
 p {
   padding: 8px;
@@ -14,9 +26,8 @@ p {
   font-family: BlenderProMedium;
 }
 .youtube_embed {
-  justify-content: center;
-  align-items: center;
-  width:  1190px;
-  height:  669px;
+  align: center;
+  width: 1190px;
+  height: 669px;
   overflow:  auto;
 }
