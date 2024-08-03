@@ -15,20 +15,31 @@
       </nav>
     </header>
     <main>
-      <section id="Short Films">
-        <h1>Short Films</h1>
+      <section class="pg1" id="title">
+        <h1>Short Films<br>by Jacklynn Yan</h1>
+        <div class="centered">
+          <button id="buttonmedium" onClick="document.getElementById('short-films').scrollIntoView();">see more
+          </button>
+        </div>
+      </section>
+      <section class="pg2" id="short-films">
+        <h4>2.</h4>
         <h3>M.O.B (in progress)</h3>
         <p>Add awards and Film Festivals here</p>
         <p>Replace video with embed of MOB</p>
-<div id="youtube_embed">
-<iframe src="https://www.youtube.com/embed/TW2R6uVeMcI" title="Make Funky Lights in Blender" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+        <div class="centered">
+          <iframe class="youtube_embed" src="https://www.youtube.com/embed/TW2R6uVeMcI" title="Make Funky Lights in Blender" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
         <p>More can be found on
         <a href="https://www.youtube.com/@plantyfromblender">YouTube</a></p>
       </section>
     </main>
     <footer>
-      <p> </p>
+      <div class="centered">
+        <button id="buttonmedium" onClick="topFunction()">back to top
+        </button>
+      </div>
+      <script src="script.js"></script>
     </footer>
   </body>
 </html>

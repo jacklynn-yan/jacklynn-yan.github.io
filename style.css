@@ -3,26 +3,108 @@
 body {
   background-color: #f1f1f1;
 }
-h1 {
-  font-family: BlenderProBold;
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+li {
+  display: inline;
+}
+li a {
+  padding: 20px;
+  font-family: Courier;
   text-align: center;
+  font-weight: normal;
+  font-size:larger;
+  text-decoration: none;
+  color: black;
+}
+li a:hover {
+  text-decoration: underline;
+}
+h1 {
+  font-family: Courier;
+  text-align: center;
+  font-weight: normal;
+  font-size:larger;
+  padding-top: 35vh;
+  padding-bottom: 35vh;
+  margin: 0px;
 }
 h2 {
-  font-family: BlenderProBold;
-  text-align: center;
+  font-family: Courier;
+  text-align: left;
+  font-weight: normal;
+  font-size:larger;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
 }
 h3 {
-  font-family: BlenderProBold;
+  font-family: Courier;
   text-align: left;
+  font-weight: normal;
+  font-size:larger;
+  margin-top: 25px;
+  margin-left: 20vw;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+h4 {
+  font-family: Courier;
+  text-align: right;
+  font-weight: normal;
+  font-size:larger;
+  margin-bottom: 0px;
+  text-transform: uppercase;
 }
 p {
-  padding: 8px;
-  margin: 25px;
-  font-family: BlenderProMedium;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-family: Courier;
+  font-size:larger;
+}
+button {
+  border: none;
+  font-family: Courier;
+  color: #545454;
+  background-color: #e2e2e2;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+button:hover {
+  transition: .3s;
+  background-color: #e9e9e9;
+}
+.centered {
+  display: flex;
+  justify-content: center;
 }
 .youtube_embed {
-  align: center;
-  width: 1190px;
-  height: 669px;
-  overflow:  auto;
+  width: 75%;
+  aspect-ratio: 16/9;
+}
+.pg1 {
+  height: 100vh;
+}
+.pg2 {
+  height: 100vh;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+.dialogue {
+  margin-left: 10vw;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+footer {
+  height: 30vh;
 }
