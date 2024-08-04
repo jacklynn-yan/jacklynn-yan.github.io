@@ -1,15 +1,15 @@
 @font-face { font-family: BlenderProBold; src: url('/font/BlenderPro-Bold.ttf'); } 
 @font-face { font-family: BlenderProMedium; src: url('/font/BlenderPro-Medium.ttf'); } 
-@media (min-width: 901px) {
+@media (min-width: 1081px) {
   :root {
     --textregular: 1.3em;
     --textbutton: 1em;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
   :root {
-    --textregular: 1.75em;
-    --textbutton: 1.5em;
+    --textregular: 2.3em;
+    --textbutton: 2em;
   }
 }
 body {
