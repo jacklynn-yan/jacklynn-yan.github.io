@@ -1,5 +1,17 @@
 @font-face { font-family: BlenderProBold; src: url('/font/BlenderPro-Bold.ttf'); } 
 @font-face { font-family: BlenderProMedium; src: url('/font/BlenderPro-Medium.ttf'); } 
+@media (min-width: 901px) {
+  :root {
+    --textregular: 1.3em;
+    --textbutton: 1em;
+  }
+}
+@media (max-width: 900px) {
+  :root {
+    --textregular: 1.75em;
+    --textbutton: 1.5em;
+  }
+}
 body {
   background-color: #f1f1f1;
 }
@@ -18,7 +30,7 @@ li a {
   font-family: Courier;
   text-align: center;
   font-weight: normal;
-  font-size:larger;
+  font-size: var(--textregular);
   text-decoration: none;
   color: black;
 }
@@ -29,7 +41,7 @@ h1 {
   font-family: Courier;
   text-align: center;
   font-weight: normal;
-  font-size:larger;
+  font-size: var(--textregular);
   padding-top: 35vh;
   padding-bottom: 35vh;
   margin: 0px;
@@ -38,7 +50,7 @@ h2 {
   font-family: Courier;
   text-align: left;
   font-weight: normal;
-  font-size:larger;
+  font-size: var(--textregular);
   margin-top: 25px;
   margin-bottom: 0px;
   text-transform: uppercase;
@@ -47,7 +59,7 @@ h3 {
   font-family: Courier;
   text-align: left;
   font-weight: normal;
-  font-size:larger;
+  font-size: var(--textregular);
   margin-top: 25px;
   margin-left: 20vw;
   margin-bottom: 0px;
@@ -57,7 +69,7 @@ h4 {
   font-family: Courier;
   text-align: right;
   font-weight: normal;
-  font-size:larger;
+  font-size: var(--textregular);
   margin-bottom: 0px;
   text-transform: uppercase;
 }
@@ -65,7 +77,7 @@ p {
   margin-top: 10px;
   margin-bottom: 0px;
   font-family: Courier;
-  font-size:larger;
+  font-size: var(--textregular);
 }
 button {
   border: none;
@@ -76,7 +88,7 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: var(--textbutton);
   cursor: pointer;
   border-radius: 15px;
 }
@@ -106,5 +118,5 @@ button:hover {
   margin-top: 0px;
 }
 footer {
-  height: 30vh;
+  height: 10vh;
 }
