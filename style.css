@@ -12,6 +12,9 @@
     --textbutton: 2em;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #f1f1f1;
 }
@@ -35,6 +38,13 @@ li a {
   color: black;
 }
 li a:hover {
+  text-decoration: underline;
+}
+p a {
+  text-decoration: none;
+  color: black;
+}
+p a:hover {
   text-decoration: underline;
 }
 h1 {
@@ -106,17 +116,24 @@ button:hover {
 }
 .pg1 {
   height: 100vh;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+.pg1 p {
+  margin-bottom: 5vh;
 }
 .pg2 {
-  height: 100vh;
+  height: auto;
   margin-left: 20vw;
   margin-right: 20vw;
 }
 .dialogue {
   margin-left: 10vw;
+  margin-right: 5vw;
   padding-top: 0px;
   margin-top: 0px;
 }
 footer {
   height: 10vh;
+  margin-top: 30pt;
 }
