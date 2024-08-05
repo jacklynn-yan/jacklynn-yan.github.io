@@ -4,12 +4,14 @@
   :root {
     --textregular: 1.3em;
     --textbutton: 1em;
+    --linkunderline: none;
   }
 }
 @media (max-width: 1080px) {
   :root {
     --textregular: 2.3em;
     --textbutton: 2em;
+    --linkunderline: underline
   }
 }
 html {
@@ -35,17 +37,28 @@ li a {
   font-weight: normal;
   font-size: var(--textregular);
   text-decoration: none;
+  text-decoration: var(--linkunderline);
   color: black;
+  cursor: pointer;
 }
 li a:hover {
   text-decoration: underline;
 }
 p a {
   text-decoration: none;
+  text-decoration: var(--linkunderline);
   color: black;
+  cursor: pointer;
 }
 p a:hover {
   text-decoration: underline;
+}
+p .stealth {
+  text-decoration: none;
+  cursor: default;
+}
+p .stealth:hover {
+  text-decoration: none;
 }
 h1 {
   font-family: Courier;
@@ -62,24 +75,6 @@ h2 {
   font-weight: normal;
   font-size: var(--textregular);
   margin-top: 25px;
-  margin-bottom: 0px;
-  text-transform: uppercase;
-}
-h3 {
-  font-family: Courier;
-  text-align: left;
-  font-weight: normal;
-  font-size: var(--textregular);
-  margin-top: 25px;
-  margin-left: 20vw;
-  margin-bottom: 0px;
-  text-transform: uppercase;
-}
-h4 {
-  font-family: Courier;
-  text-align: right;
-  font-weight: normal;
-  font-size: var(--textregular);
   margin-bottom: 0px;
   text-transform: uppercase;
 }
@@ -126,6 +121,24 @@ button:hover {
   height: auto;
   margin-left: 20vw;
   margin-right: 20vw;
+}
+.pgnumber {
+  font-family: Courier;
+  text-align: right;
+  font-weight: normal;
+  font-size: var(--textregular);
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+.charactercue {
+  font-family: Courier;
+  text-align: left;
+  font-weight: normal;
+  font-size: var(--textregular);
+  margin-top: 25px;
+  margin-left: 20vw;
+  margin-bottom: 0px;
+  text-transform: uppercase;
 }
 .dialogue {
   margin-left: 10vw;
