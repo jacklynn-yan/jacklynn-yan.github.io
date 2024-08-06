@@ -5,20 +5,56 @@
     --textregular: 1.3em;
     --textbutton: 1em;
     --linkunderline: none;
+    --sidespacing: 20vw;
   }
 }
 @media (max-width: 1080px) {
   :root {
     --textregular: 2.3em;
     --textbutton: 2em;
-    --linkunderline: underline
+    --linkunderline: underline;
+    --sidespacing: 5vw;
+  }
+}
+@media (prefers-color-scheme:light) {
+  :root {
+    --pagecolor: #f1f1f1;
+    --backgroundimage: url(img/backgroundmainlight.png);
+    --textcolor: black;
+    --buttoncolor: #e2e2e2;
+    --buttoncolorhover: #e9e9e9;
+
+  }
+}
+@media (prefers-color-scheme:dark) {
+  :root {
+    --pagecolor: #1d1d1d;
+    --backgroundimage: url(img/backgroundmaindark.png);
+    --textcolor: #f1f1f1;
+    --buttoncolor: #404040;
+    --buttoncolorhover: #5a5a5a;
   }
 }
 html {
   scroll-behavior: smooth;
 }
+.persistentheader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100vw;
+  padding: .5em;
+  background-color: var(--pagecolor);
+  z-index: 100;
+}
 body {
-  background-color: #f1f1f1;
+  image-rendering: pixelated;
+  background-image: var(--backgroundimage);
+  background-position: 50%;
+  background-attachment: fixed;
+  background-size: 20vw;
+  color: var(--textcolor)
 }
 ul {
   display: flex;
@@ -38,7 +74,7 @@ li a {
   font-size: var(--textregular);
   text-decoration: none;
   text-decoration: var(--linkunderline);
-  color: black;
+  color: var(--textcolor);
   cursor: pointer;
 }
 li a:hover {
@@ -47,7 +83,7 @@ li a:hover {
 p a {
   text-decoration: none;
   text-decoration: var(--linkunderline);
-  color: black;
+  color: var(--textcolor);
   cursor: pointer;
 }
 p a:hover {
@@ -79,17 +115,18 @@ h2 {
   text-transform: uppercase;
 }
 p {
-  margin-top: 10px;
-  margin-bottom: 0px;
+  padding-top: 10px;
+  margin: 0px;
   font-family: Courier;
   font-size: var(--textregular);
 }
 button {
   border: none;
   font-family: Courier;
-  color: #545454;
-  background-color: #e2e2e2;
+  color: var(--textcolor);
+  background-color: var(--buttoncolor);
   padding: 15px 32px;
+  margin-top: 15pt;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -99,7 +136,15 @@ button {
 }
 button:hover {
   transition: .3s;
-  background-color: #e9e9e9;
+  background-color: var(--buttoncolorhover);
+}
+.page {
+  background-color: var(--pagecolor);
+  margin-left: var(--sidespacing);
+  margin-right: var(--sidespacing);
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 3em;
 }
 .centered {
   display: flex;
@@ -111,16 +156,12 @@ button:hover {
 }
 .pg1 {
   height: 100vh;
-  margin-left: 20vw;
-  margin-right: 20vw;
 }
 .pg1 p {
   margin-bottom: 5vh;
 }
 .pg2 {
   height: auto;
-  margin-left: 20vw;
-  margin-right: 20vw;
 }
 .pgnumber {
   font-family: Courier;
@@ -147,6 +188,6 @@ button:hover {
   margin-top: 0px;
 }
 footer {
-  height: 10vh;
-  margin-top: 30pt;
+  height: auto;
+  margin-bottom: 10vh;
 }

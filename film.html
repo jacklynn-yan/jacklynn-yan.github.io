@@ -3,19 +3,23 @@
   <head>
     <title>Jacklynn Yan's Movies</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#f1f1f1" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1d1d1d" media="(prefers-color-scheme: dark)">
   </head>
   <body>
     <header>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blender.html">VFX Work</a></li>
-          <li><a href="film.html">Film Projects</a></li>
-        </ul>
+        <div class="persistentheader">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blender.html">VFX Work</a></li>
+            <li><a href="film.html">Film Projects</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
-      <section class="pg1" id="title">
+      <section class="pg1, page" id="title">
         <h1>Film Projects<br>by Jacklynn Yan</h1>
         <p><a class="stealth" href="chia.html">Chia Pass Productions</a></p>
         <div class="centered">
@@ -23,7 +27,7 @@
           </button>
         </div>
       </section>
-      <section class="pg2" id="short-films">
+      <section class="pg2, page" id="short-films">
         <p class="pgnumber">2.</p>
         <h2>INT. Personal Works</h2>
         <p>These are the films that I have written, directed, or both!</p>
@@ -43,7 +47,7 @@
         <a href="https://www.youtube.com/@plantyfromblender">my YouTube Channel</a>.</p>
       </section>
     </main>
-    <footer>
+    <footer class="page">
       <div class="centered">
         <button id="buttonmedium" onClick="topFunction()">back to top
         </button>
