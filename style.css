@@ -1,5 +1,6 @@
 @font-face { font-family: BlenderProBold; src: url('/font/BlenderPro-Bold.ttf'); } 
 @font-face { font-family: BlenderProMedium; src: url('/font/BlenderPro-Medium.ttf'); } 
+@font-face { font-family: CourierPrime; src: url('font/Courier Prime.ttf'); } 
 @media (min-width: 1081px) {
   :root {
     --textregular: 1.3em;
@@ -69,7 +70,7 @@ li {
 }
 li a {
   padding: 20px;
-  font-family: Courier;
+  font-family: CourierPrime, Courier;
   text-align: center;
   font-weight: normal;
   font-size: var(--textregular);
@@ -98,7 +99,7 @@ p .stealth:hover {
   text-decoration: none;
 }
 h1 {
-  font-family: Courier;
+  font-family: CourierPrime, Courier;
   text-align: center;
   font-weight: normal;
   font-size: var(--textregular);
@@ -107,7 +108,7 @@ h1 {
   margin: 0px;
 }
 h2 {
-  font-family: Courier;
+  font-family: CourierPrime, Courier;
   text-align: left;
   font-weight: normal;
   font-size: var(--textregular);
@@ -118,12 +119,12 @@ h2 {
 p {
   padding-top: 10px;
   margin: 0px;
-  font-family: Courier;
+  font-family: CourierPrime, Courier;
   font-size: var(--textregular);
 }
 button {
   border: none;
-  font-family: Courier;
+  font-family: CourierPrime, Courier;
   color: var(--textcolor);
   background-color: var(--buttoncolor);
   padding: 15px 32px;
@@ -165,7 +166,7 @@ button:hover {
   height: auto;
 }
 .pgnumber {
-  font-family: Courier;
+  font-family: CourierPrime, Courier;
   text-align: right;
   font-weight: normal;
   font-size: var(--textregular);
@@ -173,7 +174,7 @@ button:hover {
   text-transform: uppercase;
 }
 .charactercue {
-  font-family: Courier;
+  font-family: CourierPrime, Courier;
   text-align: left;
   font-weight: normal;
   font-size: var(--textregular);
