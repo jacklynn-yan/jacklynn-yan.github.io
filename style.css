@@ -18,32 +18,33 @@
 }
 @media (prefers-color-scheme:light) {
   :root {
-    --pagecolor: #f1f1f1;
     --backgroundimage: url(img/backgroundmainlight.png);
-    --textcolor: black;
-    --buttoncolor: #e2e2e2;
-    --buttoncolorhover: #e9e9e9;
-
   }
 }
 @media (prefers-color-scheme:dark) {
   :root {
-    --pagecolor: #1d1d1d;
     --backgroundimage: url(img/backgroundmaindark.png);
-    --textcolor: #f1f1f1;
-    --buttoncolor: #404040;
-    --buttoncolorhover: #5a5a5a;
   }
+}
+:root {
+  --textcolor: black;
+  --buttoncolor: #e2e2e2;
+  --buttoncolorhover: #e9e9e9;
+  --pagecolor: #f1f1f1;
 }
 html {
   scroll-behavior: smooth;
 }
-.persistentheader {
+.headerihardlyeven {
   position: fixed;
   top: 0;
-  left: 0;
+  width: 100%;
+}
+.persistentheader {
+  background-color: var(--pagecolor);
   height: auto;
-  width: 100vw;
+  margin-left: var(--sidespacing);
+  margin-right: calc(var(--sidespacing) + 1rem);
   padding: .5em;
   background-color: var(--pagecolor);
   z-index: 100;
