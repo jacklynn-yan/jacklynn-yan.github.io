@@ -195,23 +195,27 @@ button:hover {
 }
 .popup {
   position: fixed;
-  padding: 1em;
-  left: 1em;
-  bottom: 1em;
+  padding: var(--textregular);
+  left: 2em;
+  bottom: 2em;
   border-radius: 1em;
   background-color: var(--pagecolor);
+  box-shadow: 0px 0px 1em #0000005f;
 }
 .popup p {
   padding: 0;
+  font-size: var(--textregular);
 }
 .xbutton {
   position: absolute;
   text-align: center;
+  font-size: var(--textregular);
   top: -0.5em;
   left: -0.5em;
   height: 1.75em;
   width: 1.75em;
   border-radius: 50%;
+  box-shadow: 0px 0px 0.4em #0000005f;
 }
 footer {
   height: auto;
