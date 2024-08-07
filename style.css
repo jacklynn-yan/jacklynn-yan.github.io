@@ -193,12 +193,7 @@ button:hover {
   padding-top: 0px;
   margin-top: 0px;
 }
-footer {
-  height: auto;
-  margin-bottom: 10vh;
-}
 .popup {
-  display: block;
   position: fixed;
   padding: 1em;
   left: 1em;
@@ -216,4 +211,8 @@ footer {
   height: 1.75em;
   width: 1.75em;
   border-radius: 50%;
+}
+footer {
+  height: auto;
+  margin-bottom: 10vh;
 }
