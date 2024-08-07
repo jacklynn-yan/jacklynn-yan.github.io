@@ -206,6 +206,7 @@ button:hover {
 }
 .xbutton {
   position: absolute;
+  text-align: center;
   top: -0.5em;
   left: -0.5em;
   height: 1.75em;
