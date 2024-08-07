@@ -7,6 +7,7 @@
     --textbutton: 1em;
     --linkunderline: none;
     --sidespacing: 20vw;
+    --backgroundsize: 20vw;
   }
 }
 @media (max-width: 1080px) {
@@ -15,6 +16,7 @@
     --textbutton: 2em;
     --linkunderline: underline;
     --sidespacing: 5vw;
+    --backgroundsize: 50vw;
   }
 }
 @media (prefers-color-scheme:light) {
@@ -55,7 +57,7 @@ body {
   background-image: var(--backgroundimage);
   background-position: 50%;
   background-attachment: fixed;
-  background-size: 20vw;
+  background-size: var(--backgroundsize);
   color: var(--textcolor)
 }
 ul {
@@ -127,13 +129,15 @@ button {
   font-family: CourierPrime, Courier;
   color: var(--textcolor);
   background-color: var(--buttoncolor);
-  padding: 15px 32px;
-  margin-top: 15pt;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: var(--textbutton);
   cursor: pointer;
+}
+.buttonmedium {
+  padding: 15px 32px;
+  margin-top: 15pt;
+  display: inline-block;
   border-radius: 15px;
 }
 button:hover {
@@ -192,4 +196,24 @@ button:hover {
 footer {
   height: auto;
   margin-bottom: 10vh;
+}
+.popup {
+  display: block;
+  position: fixed;
+  padding: 1em;
+  left: 1em;
+  bottom: 1em;
+  border-radius: 1em;
+  background-color: var(--pagecolor);
+}
+.popup p {
+  padding: 0;
+}
+.xbutton {
+  position: absolute;
+  top: -0.5em;
+  left: -0.5em;
+  height: 1.75em;
+  width: 1.75em;
+  border-radius: 50%;
 }
