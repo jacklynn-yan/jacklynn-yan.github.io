@@ -57,7 +57,7 @@
 
 @media (max-width: 619px) {
     .tweetContainer {
-        margin: 0 auto;
+        margin: 0;
         border-style: solid;
         border-width: 2px;
     }
