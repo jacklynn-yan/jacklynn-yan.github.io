@@ -53,6 +53,7 @@ body {
     line-height: 1.5;
     color: #212529;
     background-color: #fff;
+    -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent
 }
 
@@ -379,7 +380,9 @@ select:disabled {
 [type=button],
 [type=reset],
 [type=submit],
-
+button {
+    -webkit-appearance: button
+}
 
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -439,6 +442,7 @@ legend+* {
 
 [type=search] {
     outline-offset: -2px;
+    -webkit-appearance: textfield
 }
 
 ::-webkit-search-decoration {
@@ -2159,7 +2163,7 @@ progress {
     -webkit-overflow-scrolling: touch
 }
 
-/*@media (max-width:575.98px) {
+@media (max-width:575.98px) {
     .table-responsive-sm {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch
@@ -2192,7 +2196,7 @@ progress {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch
     }
-}*/
+}
 
 .form-label {
     margin-bottom: .5rem
@@ -2510,6 +2514,8 @@ textarea.form-control-lg {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact
 }
 
 .form-check-input[type=checkbox] {
