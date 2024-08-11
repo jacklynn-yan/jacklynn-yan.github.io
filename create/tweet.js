@@ -98,7 +98,7 @@ function toggleEditing() {
         }
         if (total === 0) $("#tweetNumbers").hide();
 
-        $("#previewButton").html('<i class="fas fa-edit"></i>  Edit image');
+        $("#previewButton").html('Untweet');
         tweetParsed = $("#tweetContainer").html();
     } else {
         if (tweetRaw && tweetParsed) $("#tweetContainer").html(tweetRaw);
@@ -106,7 +106,7 @@ function toggleEditing() {
         $(".editable").attr("spellcheck", "true");
         $("#tweetContainer").attr("editing", "on");
         editable = true;
-        $("#previewButton").html('<i class="fas fa-eye"></i>  Preview image');
+        $("#previewButton").html('Tweet');
         $(".tweetNumber").show();
         $("#tweetNumbers").show();
         $("#numbersInfo").show();

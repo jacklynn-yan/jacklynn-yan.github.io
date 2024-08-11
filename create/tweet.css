@@ -5,6 +5,7 @@ html, body {
     --tweet-primary-color: #000000;
     --tweet-secondary-color: #5b7083;
     --tweet-tertiary-color: #c4cfd6;
+    --twitterblue: #1DA1F2;
 }
 }
 
@@ -15,6 +16,7 @@ html, body {
     --tweet-primary-color: #ffffff;
     --tweet-secondary-color: #8899a6;
     --tweet-tertiary-color: #38444d;
+    --twitterblue: #1DA1F2;
 }
 }
 h1 {
@@ -22,11 +24,29 @@ h1 {
     font-weight: bold;
     margin: 1rem 0 6px;
 }
-
+@media (max-width: 619px) {
+    .editor-container {
+        width: 100vw;
+    }
+}
 .container-sm {
     margin-top: 1rem;
 }
-
+.donebutton {
+    background-color: var(--twitterblue);
+    color: white;
+    border: none;
+    padding: .5em 1em;
+    border-radius: 500px;
+    font-weight: bold;
+    font-size: 1.25em;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+    vertical-align: top;
+}
+.donebutton:hover {
+    box-shadow: 5px 5px 10px #00000015;
+}
 h3 {
     font-size: 1.25rem;
     font-weight: bold;
