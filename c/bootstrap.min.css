@@ -46,7 +46,8 @@
 }
 @media (max-width:1080px) {
     body {
-        transform: scale(2);
+        transform: scale(1.8) translateY(300px);
+        
     }
 }
 body {
