@@ -45,7 +45,7 @@
     /*width: 480px;
     padding: 10px 15px 0 15px;*/
     max-width: 624px;
-    /*min-width: 432px;*/
+    min-width: 432px;
 }
 
 .chirp-font {
