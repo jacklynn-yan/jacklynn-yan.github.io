@@ -65,14 +65,17 @@ h3 {
     max-width: 600px;
     margin: 1rem auto;
 }
-
+@media (max-width:619) {
+    .editor {
+        border-style: none;
+    }
+}
 .editor {
     border: 2px solid var(--bordercolor);
 }
 
 .toolbar {
     padding: 12px;
-    border-bottom: 2px solid var(--bordercolor);
 }
 
 .toolbar .loading {
