@@ -27,9 +27,9 @@ h1 {
 .container-sm {
     margin-top: 1rem;
 }
-.donebutton {
-    background-color: var(--twitterblue);
-    color: white;
+button {
+    background-color: var(--tweet-tertiary-color);
+    color: var(--tweet-primary-color);
     border: none;
     padding: .5em 1em;
     border-radius: 500px;
@@ -39,7 +39,11 @@ h1 {
     transition: box-shadow 0.15s;
     vertical-align: top;
 }
-.donebutton:hover {
+.donebutton {
+    background-color: var(--twitterblue);
+    color: white;
+}
+button:hover {
     box-shadow: 5px 5px 10px #00000015;
 }
 h3 {
@@ -105,13 +109,17 @@ h3 {
 }
 
 .toolbar .toolbarButtons {
-    margin: 10px auto 0;
     text-align: center;
+    margin: 10px auto 0;
 }
 
 .toolbarButtons button {
     font-weight: 500;
     font-size: 1.15em;
+}
+
+.toolbarButtons svg {
+    height: 1.15em;
 }
 
 .version {

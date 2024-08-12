@@ -32,7 +32,29 @@
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
 }
-
+@media (prefers-color-scheme:light) {
+  html, body {
+    background-color: #ffffff;
+    --backgroundcolor: #ffffff;
+    --bordercolor: #ebeef0;
+    --tweet-primary-color: #000000;
+    --tweet-secondary-color: #5b7083;
+    --tweet-tertiary-color: #c4cfd6;
+    --twitterblue: #1DA1F2;
+  }
+}
+  
+@media (prefers-color-scheme:dark) {
+  html, body {
+    background-color: #15202b;
+    --backgroundcolor: #15202b;
+    --bordercolor: #38444d;
+    --tweet-primary-color: #ffffff;
+    --tweet-secondary-color: #8899a6;
+    --tweet-tertiary-color: #38444d;
+    --twitterblue: #1DA1F2;
+  }
+}
 *,
 ::after,
 ::before {
@@ -6006,14 +6028,15 @@ fieldset:disabled .btn {
 }
 
 .modal-content {
+  color: var(--tweet-primary-color);
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
+  background-color: var(--backgroundcolor);
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, .2);
+  border: 1px solid var(--tweet-tertiary-color);
   border-radius: .3rem;
   outline: 0
 }
@@ -6042,7 +6065,7 @@ fieldset:disabled .btn {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid var(--tweet-tertiary-color);
   border-top-left-radius: calc(.3rem - 1px);
   border-top-right-radius: calc(.3rem - 1px)
 }
@@ -6070,7 +6093,7 @@ fieldset:disabled .btn {
   align-items: center;
   justify-content: flex-end;
   padding: .75rem;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid var(--tweet-tertiary-color);
   border-bottom-right-radius: calc(.3rem - 1px);
   border-bottom-left-radius: calc(.3rem - 1px)
 }
