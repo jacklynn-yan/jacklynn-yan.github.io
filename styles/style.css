@@ -1,9 +1,9 @@
 @font-face { font-family: BlenderProBold; src: url('/font/BlenderPro-Bold.ttf'); } 
 @font-face { font-family: BlenderProMedium; src: url('/font/BlenderPro-Medium.ttf'); } 
-@font-face { font-family: CourierPrime; src: url('font/Courier Prime.ttf'); } 
+@font-face { font-family: CourierPrime; src: url('/font/Courier Prime.ttf'); } 
 @media (min-width: 1081px) {
   :root {
-    --textregular: 1.3em;
+    --textregular: 1.25em;
     --textbutton: 1em;
     --linkunderline: none;
     --sidespacing: 20vw;
@@ -12,7 +12,7 @@
 }
 @media (max-width: 1080px) {
   :root {
-    --textregular: 2.3em;
+    --textregular: 2.5em;
     --textbutton: 2em;
     --linkunderline: underline;
     --sidespacing: 5vw;
@@ -21,19 +21,20 @@
 }
 @media (prefers-color-scheme:light) {
   :root {
-    --backgroundimage: url(img/backgroundmainlight.png);
+    --backgroundimage: url(/img/backgroundmainlight.png);
   }
 }
 @media (prefers-color-scheme:dark) {
   :root {
-    --backgroundimage: url(img/backgroundmaindark.png);
+    --backgroundimage: url(/img/backgroundmaindark.png);
   }
 }
 :root {
   --textcolor: black;
-  --buttoncolor: #e2e2e2;
-  --buttoncolorhover: #e9e9e9;
-  --pagecolor: #f1f1f1;
+  --buttoncolor: #e0e1dd;
+  --buttoncolorhover: #e9eae7;
+  --pagecolor: #f4f5f1;
+  --shadowcolor: #0000005f;
 }
 html {
   scroll-behavior: smooth;
@@ -162,12 +163,14 @@ button:hover {
 }
 .pg1 {
   height: 100vh;
+  width: auto;
 }
 .pg1 p {
   margin-bottom: 5vh;
 }
 .pg2 {
   height: auto;
+  width: auto;
 }
 .pgnumber {
   font-family: CourierPrime, Courier;
@@ -200,7 +203,7 @@ button:hover {
   bottom: 2em;
   border-radius: 1em;
   background-color: var(--pagecolor);
-  box-shadow: 0px 0px 1em #0000005f;
+  box-shadow: 0px 0px 1.5em var(--shadowcolor);
 }
 .popup p {
   padding: 0;
@@ -217,7 +220,43 @@ button:hover {
   height: 1.75em;
   width: 1.75em;
   border-radius: 50%;
-  box-shadow: 0px 0px 0.4em #0000005f;
+  box-shadow: 0px 0px 1em var(--shadowcolor);
+}
+.sketchframe {
+  position: relative;
+  height: 0;
+  width: 100%;
+}
+.sketch {
+  position: absolute;
+  width: auto;
+  opacity: 100%;
+}
+@media (min-width: 1081px) {
+  .highlight {
+    top: -2.5em;
+    left: 8vw;
+    height: 8em;
+    width: 35vw;
+    rotate: 0deg;
+    opacity: 60%;
+  }
+}
+@media (max-width: 1080px) {
+  .highlight {
+    top: -4em;
+    left: 8vw;
+    height: 18em;
+    width: 65vw;
+    rotate: 5deg;
+    opacity: 60%;
+  }
+}
+.mailsketch {
+  top: -10em;
+  right: 0;
+  height: 10em;
+  rotate: 13deg;
 }
 footer {
   height: auto;

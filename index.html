@@ -11,8 +11,8 @@
     <link rel="canonical" href="https://www.jacklynnyan.com"/>
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
-    <link rel="stylesheet" href="style.css">
-    <meta name="theme-color" content="#cc905e" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="/styles/style.css">
+    <meta name="theme-color" content="#cd905e" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#313467" media="(prefers-color-scheme: dark)">
   </head>
   <body>
@@ -28,27 +28,47 @@
       </nav>
     </header>
     <main>
-      <section class="pg1, page" id="home">
-        <h1>My Portfolio<br>by Jacklynn Yan</h1>
-        <p>This website is a work in progress, please excuse all of it.</p>
-        <div class="centered">
-          <button class="buttonmedium" onClick="document.getElementById('contact').scrollIntoView();">see more
-          </button>
-        </div>
+      <section id="home">
+        <div class="pg1 page">
+          <h1>My Portfolio<br>by Jacklynn Yan</h1>
+          <p>This website is a work in progress, please excuse all of it.</p>
+          <div class="centered">
+            <button class="buttonmedium" onClick="document.getElementById('about').scrollIntoView();">see more
+            </button>
+          </div>
+        </div> 
       </section>
-      <section class="pg2, page" id="contact">
-        <p class="pgnumber">2.</p>
-        <h2>INT. Living Room</h2>
-        <p>Here you can find my VFX work and film projects.</p>
-        <p class="charactercue">Narrator</p>
-        <p class="dialogue">You can reach me on instagram
-        <a href="https://www.instagram.com/plantyfromblender/">@plantyfromblender</a></p>
-        <p class="charactercue">Narrator</p>
-        <p class="dialogue">Or email me at
-        <a href="mailto:contact@jacklynnyan.com">contact@jacklynnyan.com</a></p>
-        <h2>EXT. More</h2>
-        <p>To see more work, check out
-        <a href="https://www.youtube.com/@plantyfromblender">my YouTube</a></p>
+      <section id="about">
+        <div class="pg2, page">
+          <p class="pgnumber">2.</p>
+          <h2>INT. Living Room</h2>
+          <p>The set is staged to achieve a more down to earth feel.</p>
+          <p class="charactercue">Interviewer</p>
+          <p class="dialogue">Could you please introduce yourself to the audience?</p>
+          <p>Jacklynn looks to the camera, not much of an audience.</p>
+          <p class="charactercue">Jacklynn</p>
+          <p class="dialogue">My name is Jacklynn Yan, I'm a VFX generalist and aspiring filmmaker.</p>
+          <p>The interviewer raises an eyebrow.</p>
+          <p class="charactercue">Interviewer</p>
+          <p class="dialogue">And where can people find your work?</p>
+          <p class="charactercue">Jacklynn</p>
+          <div class="sketchframe">
+            <img class="sketch highlight" src="img/highlight1.png">
+          </div>
+          <p class="dialogue">This website is where you can find my <a href="blender.html">VFX work</a>, <a href="film.html">film projects</a>, and <a href="more.html">more</a>.</p>
+          <h2>EXT. Contact</h2>
+          <p class="charactercue">Narrator</p>
+          <p class="dialogue">You can contact me on instagram <a href="https://www.instagram.com/plantyfromblender/">@plantyfromblender</a>.</p>
+          <p class="charactercue">Narrator</p>
+          <p class="dialogue">Or email me at
+          <a href="mailto:contact@jacklynnyan.com">contact@jacklynnyan.com</a></p>
+          <div class="sketchframe">
+            <img class="sketch mailsketch" src="img/mail.png">
+          </div>
+          <h2>EXT. More</h2>
+          <p>To see more work, check out
+          <a href="https://www.youtube.com/@plantyfromblender">my YouTube</a></p>
+        </div>
       </section>
     </main>
     <footer class="page">
@@ -60,7 +80,7 @@
         <p><a class="stealth" href="https://www.zeqeg.com">🍪</a></p>
         <button class="xbutton" onClick="closepopup()">&#x2715;</button>
       </div>
-      <script src="script.js"></script>
+      <script src="/js/script.js"></script>
     </footer>
   </body>
 </html>
