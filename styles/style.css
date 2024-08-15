@@ -1,7 +1,7 @@
 @font-face { font-family: BlenderProBold; src: url('/font/BlenderPro-Bold.ttf'); } 
 @font-face { font-family: BlenderProMedium; src: url('/font/BlenderPro-Medium.ttf'); } 
 @font-face { font-family: CourierPrime; src: url('/font/Courier Prime.ttf'); } 
-@media (min-width: 1081px) {
+@media (orientation: landscape) {
   :root {
     --textregular: 1.25em;
     --textbutton: 1em;
@@ -10,7 +10,7 @@
     --backgroundsize: 20vw;
   }
 }
-@media (max-width: 1080px) {
+@media (orientation: portrait) {
   :root {
     --textregular: 2.5em;
     --textbutton: 2em;
@@ -50,7 +50,6 @@ html {
   margin-left: var(--sidespacing);
   margin-right: calc(var(--sidespacing) + 1rem);
   padding: .5em;
-  background-color: var(--pagecolor);
   z-index: 100;
 }
 body {
@@ -59,7 +58,7 @@ body {
   background-position: 50%;
   background-attachment: fixed;
   background-size: var(--backgroundsize);
-  color: var(--textcolor)
+  color: var(--textcolor);
 }
 ul {
   display: flex;
@@ -152,6 +151,7 @@ button:hover {
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 3em;
+  box-shadow: 0px 0px 1.5em var(--shadowcolor);
 }
 .centered {
   display: flex;
@@ -232,26 +232,30 @@ button:hover {
   width: auto;
   opacity: 100%;
 }
-@media (min-width: 1081px) {
+/*.highlight {
+  position: absolute;
+  background-color: aqua;
+  background-image: url(img/highlight1.png);
+  z-index: -1;
+}
+@media (orientation: landscape) {
   .highlight {
     top: -2.5em;
     left: 8vw;
     height: 8em;
     width: 35vw;
     rotate: 0deg;
-    opacity: 60%;
   }
 }
-@media (max-width: 1080px) {
+@media (orientation: portrait) {
   .highlight {
     top: -4em;
     left: 8vw;
     height: 18em;
     width: 65vw;
     rotate: 5deg;
-    opacity: 60%;
   }
-}
+}*/
 .mailsketch {
   top: -10em;
   right: 0;

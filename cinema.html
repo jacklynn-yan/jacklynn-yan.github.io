@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Chia Pass Productions</title>
+    <title>The Cinema</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
@@ -11,9 +11,9 @@
     <link rel="canonical" href="https://www.jacklynnyan.com"/>
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
-    <link rel="stylesheet" href="/styles/style.css">
-    <meta name="theme-color" content="#cd905e" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#313467" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="/styles/cinema.css">
+    <meta name="theme-color" content="#9e2017" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#820401" media="(prefers-color-scheme: dark)">
   </head>
   <body>
     <header>
@@ -27,21 +27,41 @@
         </div></div>
       </nav>
     </header>
-    <div class="page">
     <main>
-      <section class="pg1" id="title">
-        <div class="centered" style="padding-top: 20vh">
-            <iframe class="youtube_embed" src="https://www.youtube.com/embed/V0ZGuKS8MYE" title="TFA Dailies 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <section class="pg1 centered" id="title">
+        <div class="cinematitle">
+          <h1>The Cinema</h1>
+        </div>
+      </section>
+      <section>
+        <div class="watchlist">
+          <div class="poster" id="filmname">
+            poster
+          </div>
+          <div class="poster" id="filmname">
+            poster
+          </div>
+          <div class="poster" id="filmname">
+            poster
+          </div>
+          <div class="poster" id="filmname">
+            poster
+          </div>
+          <div class="poster" id="filmname">
+            poster
+          </div>
+          <div class="poster" id="filmname">
+            poster
+          </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="popup" id="close">
-        <p><a class="stealth" href="https://www.twitch.tv/megamern">🍪</a></p>
-        <button class="xbutton" onClick="closepopup()">&#x2715;</button>
-        <script src="/js/script.js"></script>
+      <div class="centered">
+        <button class="buttonmedium" onClick="topFunction()">back to top
+        </button>
       </div>
+      <script src="/js/script.js"></script>
     </footer>
-    </div>
   </body>
 </html>

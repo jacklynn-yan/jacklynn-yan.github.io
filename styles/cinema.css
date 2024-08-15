@@ -1,0 +1,125 @@
+@font-face { font-family: CourierPrime; src: url('/font/Courier Prime.ttf'); } 
+@media (orientation: landscape) {
+  :root {
+    --textregular: 1.25em;
+    --textbutton: 1em;
+    --linkunderline: none;
+    --sidespacing: 10vw;
+    --backgroundsize: 100vw;
+  }
+}
+@media (orientation: portrait) {
+  :root {
+    --textregular: 2.5em;
+    --textbutton: 2em;
+    --linkunderline: underline;
+    --sidespacing: 5vw;
+    --backgroundsize: 100vh;
+  }
+}
+@media (prefers-color-scheme:light) {
+  :root {
+    --backgroundimage: url(/img/backgroundcinemalight.png);
+    --headercolor: #9e2017;
+    --pagecolor: #f5f1f1;
+    --textcolor: black;
+  }
+}
+@media (prefers-color-scheme:dark) {
+  :root {
+    --backgroundimage: url(/img/backgroundcinemadark.png);
+    --headercolor: #820401;
+    --pagecolor: #2f2c2c;
+    --textcolor: #f8f8dc;
+  }
+}
+:root {
+  --buttoncolor: #e0e1dd;
+  --buttoncolorhover: #e9eae7;
+  --shadowcolor: #0000005f;
+}
+html {
+  scroll-behavior: smooth;
+}
+.headerihardlyeven {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.persistentheader {
+  background-color: var(--headercolor);
+  height: auto;
+  width: 100vw;
+  padding: 0.5em;
+  z-index: 100;
+  box-shadow: 0 0 2em var(--shadowcolor);
+}
+.pg1 {
+  height: 100vh;
+  width: auto;
+}
+body {
+  image-rendering: pixelated;
+  background-image: var(--backgroundimage);
+  background-position: 50%;
+  background-attachment: fixed;
+  background-size: var(--backgroundsize);
+  color: var(--textcolor);
+  font-family: CourierPrime, Courier, monospace;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+li {
+  display: inline;
+}
+li a {
+  padding: 20px;
+  font-family: CourierPrime, Courier;
+  text-align: center;
+  font-weight: normal;
+  font-size: var(--textregular);
+  text-decoration: none;
+  text-decoration: var(--linkunderline);
+  color: var(--textcolor);
+  cursor: pointer;
+}
+li a:hover {
+  text-decoration: underline;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cinematitle {
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+  width: 40vw;
+  height: 50vh;
+}
+h1 {
+  color: var(--textcolor);
+}
+.watchlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  column-gap: 15px;
+  row-gap: 15px;
+  margin: 0 var(--sidespacing);
+}
+.poster {
+  display: block;
+  width: 250px;
+  height: 333px;
+  background-color: teal;
+}
