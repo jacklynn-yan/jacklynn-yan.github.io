@@ -1,0 +1,105 @@
+@media (orientation: landscape) {
+  :root {
+    --sidespacing: 20vw;
+    --backgroundsize: 20vw;
+  }
+}
+@media (orientation: portrait) {
+  :root {
+    --sidespacing: 5vw;
+    --backgroundsize: 50vw;
+  }
+}
+@media (prefers-color-scheme:light) {
+  :root {
+    --backgroundimage: url(/img/backgroundmainlight.png);
+  }
+}
+@media (prefers-color-scheme:dark) {
+  :root {
+    --backgroundimage: url(/img/backgroundmaindark.png);
+  }
+}
+:root {
+  --textcolor: black;
+  --buttoncolor: #e0e1dd;
+  --buttoncolorhover: #e9eae7;
+  --pagecolor: #f4f5f1;
+  --shadowcolor: #0000005f;
+}
+.page {
+  background-color: var(--pagecolor);
+  margin-left: var(--sidespacing);
+  margin-right: var(--sidespacing);
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 3em;
+  box-shadow: 0px 0px 1.5em var(--shadowcolor);
+}
+.pg1 p {
+  margin-bottom: 5vh;
+}
+.pgnumber {
+  font-family: CourierPrime, Courier;
+  text-align: right;
+  font-weight: normal;
+  font-size: var(--textregular);
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+.charactercue {
+  font-family: CourierPrime, Courier;
+  text-align: left;
+  font-weight: normal;
+  font-size: var(--textregular);
+  margin-top: 25px;
+  margin-left: 20vw;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+.dialogue {
+  margin-left: 10vw;
+  margin-right: 5vw;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+.sketchframe {
+  position: relative;
+  height: 0;
+  width: 100%;
+}
+.sketch {
+  position: absolute;
+  width: auto;
+  opacity: 100%;
+}
+/*.highlight {
+  position: absolute;
+  background-color: aqua;
+  background-image: url(img/highlight1.png);
+  z-index: -1;
+}
+@media (orientation: landscape) {
+  .highlight {
+    top: -2.5em;
+    left: 8vw;
+    height: 8em;
+    width: 35vw;
+    rotate: 0deg;
+  }
+}
+@media (orientation: portrait) {
+  .highlight {
+    top: -4em;
+    left: 8vw;
+    height: 18em;
+    width: 65vw;
+    rotate: 5deg;
+  }
+}*/
+.mailsketch {
+  top: -10em;
+  right: 0;
+  height: 10em;
+  rotate: 13deg;
+}

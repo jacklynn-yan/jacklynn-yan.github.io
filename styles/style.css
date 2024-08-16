@@ -6,8 +6,6 @@
     --textregular: 1.25em;
     --textbutton: 1em;
     --linkunderline: none;
-    --sidespacing: 20vw;
-    --backgroundsize: 20vw;
   }
 }
 @media (orientation: portrait) {
@@ -15,29 +13,11 @@
     --textregular: 2.5em;
     --textbutton: 2em;
     --linkunderline: underline;
-    --sidespacing: 5vw;
-    --backgroundsize: 50vw;
   }
-}
-@media (prefers-color-scheme:light) {
-  :root {
-    --backgroundimage: url(/img/backgroundmainlight.png);
-  }
-}
-@media (prefers-color-scheme:dark) {
-  :root {
-    --backgroundimage: url(/img/backgroundmaindark.png);
-  }
-}
-:root {
-  --textcolor: black;
-  --buttoncolor: #e0e1dd;
-  --buttoncolorhover: #e9eae7;
-  --pagecolor: #f4f5f1;
-  --shadowcolor: #0000005f;
 }
 html {
   scroll-behavior: smooth;
+  font-family: CourierPrime, Courier;
 }
 .headerihardlyeven {
   position: fixed;
@@ -72,7 +52,6 @@ li {
 }
 li a {
   padding: 20px;
-  font-family: CourierPrime, Courier;
   text-align: center;
   font-weight: normal;
   font-size: var(--textregular);
@@ -101,7 +80,6 @@ p .stealth:hover {
   text-decoration: none;
 }
 h1 {
-  font-family: CourierPrime, Courier;
   text-align: center;
   font-weight: normal;
   font-size: var(--textregular);
@@ -110,7 +88,6 @@ h1 {
   margin: 0px;
 }
 h2 {
-  font-family: CourierPrime, Courier;
   text-align: left;
   font-weight: normal;
   font-size: var(--textregular);
@@ -121,7 +98,6 @@ h2 {
 p {
   padding-top: 10px;
   margin: 0px;
-  font-family: CourierPrime, Courier;
   font-size: var(--textregular);
 }
 button {
@@ -144,18 +120,10 @@ button:hover {
   transition: .3s;
   background-color: var(--buttoncolorhover);
 }
-.page {
-  background-color: var(--pagecolor);
-  margin-left: var(--sidespacing);
-  margin-right: var(--sidespacing);
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 3em;
-  box-shadow: 0px 0px 1.5em var(--shadowcolor);
-}
 .centered {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .youtube_embed {
   width: 75%;
@@ -165,36 +133,9 @@ button:hover {
   height: 100vh;
   width: auto;
 }
-.pg1 p {
-  margin-bottom: 5vh;
-}
 .pg2 {
   height: auto;
   width: auto;
-}
-.pgnumber {
-  font-family: CourierPrime, Courier;
-  text-align: right;
-  font-weight: normal;
-  font-size: var(--textregular);
-  margin-bottom: 0px;
-  text-transform: uppercase;
-}
-.charactercue {
-  font-family: CourierPrime, Courier;
-  text-align: left;
-  font-weight: normal;
-  font-size: var(--textregular);
-  margin-top: 25px;
-  margin-left: 20vw;
-  margin-bottom: 0px;
-  text-transform: uppercase;
-}
-.dialogue {
-  margin-left: 10vw;
-  margin-right: 5vw;
-  padding-top: 0px;
-  margin-top: 0px;
 }
 .popup {
   position: fixed;
@@ -221,46 +162,6 @@ button:hover {
   width: 1.75em;
   border-radius: 50%;
   box-shadow: 0px 0px 1em var(--shadowcolor);
-}
-.sketchframe {
-  position: relative;
-  height: 0;
-  width: 100%;
-}
-.sketch {
-  position: absolute;
-  width: auto;
-  opacity: 100%;
-}
-/*.highlight {
-  position: absolute;
-  background-color: aqua;
-  background-image: url(img/highlight1.png);
-  z-index: -1;
-}
-@media (orientation: landscape) {
-  .highlight {
-    top: -2.5em;
-    left: 8vw;
-    height: 8em;
-    width: 35vw;
-    rotate: 0deg;
-  }
-}
-@media (orientation: portrait) {
-  .highlight {
-    top: -4em;
-    left: 8vw;
-    height: 18em;
-    width: 65vw;
-    rotate: 5deg;
-  }
-}*/
-.mailsketch {
-  top: -10em;
-  right: 0;
-  height: 10em;
-  rotate: 13deg;
 }
 footer {
   height: auto;
