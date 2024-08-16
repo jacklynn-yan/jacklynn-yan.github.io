@@ -13,19 +13,43 @@
 @media (prefers-color-scheme:light) {
   :root {
     --backgroundimage: url(/img/backgroundmainlight.png);
+    --buttoncolor: #e0e1dd;
+    --buttoncolorhover: #e9eae7;
+    --pagecolor: #f4f5f1;
   }
 }
 @media (prefers-color-scheme:dark) {
   :root {
     --backgroundimage: url(/img/backgroundmaindark.png);
+    --buttoncolor: #b0b1af;
+    --buttoncolorhover: #bfbfbf;
+    --pagecolor: #c8c9c6;
   }
 }
 :root {
   --textcolor: black;
-  --buttoncolor: #e0e1dd;
-  --buttoncolorhover: #e9eae7;
-  --pagecolor: #f4f5f1;
   --shadowcolor: #0000005f;
+}
+h1 {
+  text-align: center;
+  font-weight: normal;
+  font-size: var(--textregular);
+  padding-top: 35vh;
+  padding-bottom: 35vh;
+  margin: 0px;
+}
+h2 {
+  text-align: left;
+  font-weight: normal;
+  font-size: var(--textregular);
+  margin-top: 25px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+p {
+  padding-top: 10px;
+  margin: 0px;
+  font-size: var(--textregular);
 }
 .page {
   background-color: var(--pagecolor);

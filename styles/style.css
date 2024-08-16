@@ -79,27 +79,6 @@ p .stealth {
 p .stealth:hover {
   text-decoration: none;
 }
-h1 {
-  text-align: center;
-  font-weight: normal;
-  font-size: var(--textregular);
-  padding-top: 35vh;
-  padding-bottom: 35vh;
-  margin: 0px;
-}
-h2 {
-  text-align: left;
-  font-weight: normal;
-  font-size: var(--textregular);
-  margin-top: 25px;
-  margin-bottom: 0px;
-  text-transform: uppercase;
-}
-p {
-  padding-top: 10px;
-  margin: 0px;
-  font-size: var(--textregular);
-}
 button {
   border: none;
   font-family: CourierPrime, Courier;
