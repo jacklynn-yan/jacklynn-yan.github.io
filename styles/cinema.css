@@ -2,28 +2,38 @@
 @media (orientation: landscape) {
   :root {
     --sidespacing: 15vw;
-    --backgroundsize: 100vw;
+    --posterwidth: 250px;
+    --posterheight: 333px;
+    --postergap: 1.5em;
+    --backgroundsize: cover;
+  }
+  .persistentheader {
+    box-shadow: 0px 0px 1.5em var(--shadowcolor);
   }
 }
 @media (orientation: portrait) {
   :root {
     --sidespacing: 5vw;
-    --backgroundsize: 100vh;
+    --posterwidth: 500px;
+    --posterheight: 666px;
+    --postergap: 3em;
+    --backgroundsize: 50vw;
+  }
+  .persistentheader {
+    box-shadow: none;
   }
 }
-@media (prefers-color-scheme:light) {
+@media (prefers-color-scheme: light) {
   :root {
-    --backgroundimage: url(/img/backgroundcinemalight.png);
-    --headercolor: #9e2017;
+    --headercolor: #bf160a;
     --pagecolor: #f5f1f1;
     --textcolor: black;
-    --buttoncolor: #a82218;
-    --buttoncolorhover: #b73229;
+    --buttoncolor: #b81d12;
+    --buttoncolorhover: #c1372d;
   }
 }
-@media (prefers-color-scheme:dark) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --backgroundimage: url(/img/backgroundcinemadark.png);
     --headercolor: #820401;
     --pagecolor: #2f2c2c;
     --textcolor: #f8f8dc;
@@ -31,11 +41,43 @@
     --buttoncolorhover: #9c0806;
   }
 }
+@media (orientation: landscape) and (prefers-color-scheme: light) {
+  :root {
+    --backgroundimage: url(/img/backgroundcinemalight.png);
+  }
+}
+@media (orientation: landscape) and (prefers-color-scheme: dark) {
+  :root {
+    --backgroundimage: url(/img/backgroundcinemadark.png);
+  }
+}
+@media (orientation: portrait) and (prefers-color-scheme: light) {
+  :root {
+    --backgroundimage: url(/img/backgroundcinemalightportrait.png);
+  }
+}
+@media (orientation: portrait) and (prefers-color-scheme: dark) {
+  :root {
+    --backgroundimage: url(/img/backgroundcinemadarkportrait.png);
+  }
+}
 :root {
   --shadowcolor: #0000005f;
 }
+.sneakybackground {
+  background-image: var(--backgroundimage);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
 html {
   color: var(--textcolor);
+  background-attachment: fixed;
 }
 .headerihardlyeven {
   left: 0;
@@ -61,13 +103,22 @@ h1 {
   justify-content: center;
   align-items: center;
   align-content: space-between;
-  column-gap: 15px;
-  row-gap: 15px;
+  column-gap: var(--postergap);
+  row-gap: var(--postergap);
   margin: 0 var(--sidespacing);
 }
 .poster {
   display: block;
-  width: 250px;
-  height: 333px;
-  background-color: teal;
+  width: var(--posterwidth);
+  height: var(--posterheight);
+  background-color: var(--headercolor);
+  box-shadow: 0px 0px 1.5em var(--shadowcolor);
+}
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.new {
+  box-shadow: 0px 0px 0.5em #e9c43f;
 }
