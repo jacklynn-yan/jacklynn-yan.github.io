@@ -74,10 +74,11 @@ h3 {
         border-style: none;
     }
 }
-.editor {
-    border: 2px solid var(--bordercolor);
+@media (orientation: landscape) {
+    .editor {
+        border: 2px solid var(--bordercolor);
+    }
 }
-
 .toolbar {
     padding: 12px;
 }
