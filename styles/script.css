@@ -15,7 +15,7 @@
     --backgroundimage: url(/img/backgroundmainlight.png);
     --buttoncolor: #e0e1dd;
     --buttoncolorhover: #e9eae7;
-    --pagecolor: #f4f5f1;
+    --pagecolor: #f5f4f1;
   }
 }
 @media (prefers-color-scheme:dark) {

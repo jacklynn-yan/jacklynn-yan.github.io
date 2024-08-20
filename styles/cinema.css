@@ -25,20 +25,20 @@
 }
 @media (prefers-color-scheme: light) {
   :root {
-    --headercolor: #bf160a;
-    --pagecolor: #f5f1f1;
-    --textcolor: black;
-    --buttoncolor: #b81d12;
-    --buttoncolorhover: #c1372d;
+    --headercolor: #92140C;
+    --pagecolor: #f5f4f1;
+    --textcolor: #dfd2cc;
+    --buttoncolor: #a5180e;
+    --buttoncolorhover: #a02b23;
   }
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --headercolor: #820401;
+    --headercolor: #5c0200;
     --pagecolor: #2f2c2c;
-    --textcolor: #f8f8dc;
-    --buttoncolor: #8f0604;
-    --buttoncolorhover: #9c0806;
+    --textcolor: #da925f;
+    --buttoncolor: #5f0201;
+    --buttoncolorhover: #5a0200;
   }
 }
 @media (orientation: landscape) and (prefers-color-scheme: light) {
@@ -79,9 +79,15 @@ html {
 .cinematitle {
   display: flex;
   justify-content: center;
-  background-color: aqua;
-  width: 40vw;
-  height: 50vh;
+  margin: 0 var(--sidespacing);
+  margin-top: 10vh;
+  aspect-ratio: 16/9;
+  width: auto;
+  height: auto;
+  max-height: 75vh;
+}
+.cinematitle img {
+  width: 100%;
 }
 h1 {
   color: var(--textcolor);

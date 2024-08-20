@@ -13,8 +13,8 @@
     <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/cinema.css">
-    <meta name="theme-color" content="#bf160a" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#820401" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#92140C" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#5c0200" media="(prefers-color-scheme: dark)">
   </head>
   <body>
     <header>
@@ -29,13 +29,19 @@
       </nav>
     </header>
     <main>
-      <section class="pg1 centered" id="title">
-        <div class="cinematitle">
-          <h1>The Cinema</h1>
+      <section class="pg1" id="title">
+        <div class="centered">
+          <div class="cinematitle">
+            <img src="img/CinemaTitle.png">
+          </div>
+        </div>
+        <div class="centered">
+          <button class="buttonmedium" onClick="document.getElementById('watchlist').scrollIntoView();">watch 🍿
+          </button>
         </div>
       </section>
       <section>
-        <div class="watchlist">
+        <div class="watchlist" id="watchlist">
           <div class="poster new" id="filmname">
             <img src="img/posters/testposter.png">
           </div>
