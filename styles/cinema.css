@@ -80,7 +80,7 @@ html {
   display: flex;
   justify-content: center;
   margin: 0 var(--sidespacing);
-  margin-top: 10vh;
+  margin-top: 8vh;
   aspect-ratio: 16/9;
   width: auto;
   height: auto;
