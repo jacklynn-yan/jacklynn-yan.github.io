@@ -9,7 +9,7 @@ img {
   height: 90vh;
 }
 .brat {
-  font-family: 'Arial Narrow';
+  font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
   position: fixed;
   display: flex;
   top: 50%;
