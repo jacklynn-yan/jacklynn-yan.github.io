@@ -63,13 +63,13 @@ li a {
 li a:hover {
   text-decoration: underline;
 }
-p a {
+p a, h2 a {
   text-decoration: none;
   text-decoration: var(--linkunderline);
   color: var(--textcolor);
   cursor: pointer;
 }
-p a:hover {
+p a:hover, h2 a:hover {
   text-decoration: underline;
 }
 p .stealth {

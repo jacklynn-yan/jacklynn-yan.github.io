@@ -21,9 +21,9 @@
 @media (prefers-color-scheme:dark) {
   :root {
     --backgroundimage: url(/img/backgroundmaindark.png);
-    --buttoncolor: #b0b1af;
-    --buttoncolorhover: #bfbfbf;
-    --pagecolor: #c8c9c6;
+    --buttoncolor: #d6d7d4;
+    --buttoncolorhover: #d9dad7;
+    --pagecolor: #e8e7e4;
   }
 }
 :root {
