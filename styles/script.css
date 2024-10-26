@@ -42,13 +42,12 @@ h2 {
   text-align: left;
   font-weight: normal;
   font-size: var(--textregular);
-  margin-top: 25px;
-  margin-bottom: 0px;
+  margin-top: calc(var(--textregular) + var(--textregular));
+  margin-bottom: var(--textregular);
   text-transform: uppercase;
 }
 p {
-  padding-top: 10px;
-  margin: 0px;
+  padding: var(--textregular), 0px;
   font-size: var(--textregular);
 }
 .page {
@@ -120,10 +119,10 @@ p {
     width: 65vw;
     rotate: 5deg;
   }
-}*/
+}
 .mailsketch {
   top: -10em;
   right: 0;
   height: 10em;
   rotate: 13deg;
-}
+} */

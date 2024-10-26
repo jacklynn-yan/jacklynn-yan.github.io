@@ -79,6 +79,9 @@ p .stealth {
 p .stealth:hover {
   text-decoration: none;
 }
+.cookie {
+  margin: 0px;
+}
 button {
   border: none;
   font-family: CourierPrime, Courier;
