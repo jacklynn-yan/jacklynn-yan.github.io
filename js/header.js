@@ -1,0 +1,1 @@
+document.getElementById("header").innerHTML = "<nav><ul><li><a href=\"/index.html\">Home</a></li><li><a href=\"/blender.html\">VFX Work</a></li><li><a href=\"/film.html\">Film Projects</a></li></ul></nav>";

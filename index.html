@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Jacklynn Yan's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
@@ -12,74 +13,164 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
     <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/script.css">
-    <meta name="theme-color" content="#cd905e" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#313467" media="(prefers-color-scheme: dark)">
+    <!-- <link rel="stylesheet" href="/styles/index.css"> -->
+    <link rel="stylesheet" href="/styles/random.css">
+    <meta name="theme-color" content="#4f9798" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#086e70" media="(prefers-color-scheme: dark)">
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="headerihardlyeven"><div class="persistentheader">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="blender.html">VFX Work</a></li>
-            <li><a href="film.html">Film Projects</a></li>
-          </ul>
-        </div></div>
-      </nav>
-    </header>
-    <div class="page">
+    <!-- <header id="header"></header> -->
     <main>
-      <section id="home">
-        <div class="pg1">
-          <h1>My Portfolio<br>by Jacklynn Yan</h1>
-          <p>This website is a work in progress, please excuse all of it.</p>
-          <div class="centered">
-            <button class="buttonmedium" onClick="document.getElementById('about').scrollIntoView();">see more
-            </button>
+      <section id="title">
+        <div class="titlebackground">
+          <div id="titlewords">
+            <h1>
+              <span id="titleword1">
+                <span id="word1letter1">c</span>
+                <span id="word1letter2">a</span>
+                <span id="word1letter3">m</span>
+                <span id="word1letter4">e</span>
+                <span id="word1letter5">r</span>
+                <span id="word1letter6">a</span>
+                <span id="word1letter7"></span>
+                <span id="word1letter8"></span>
+              </span>
+              <br>
+              <span id="titleword2">
+                <span id="word2letter1">o</span>
+                <span id="word2letter2">p</span>
+                <span id="word2letter3">e</span>
+                <span id="word2letter4">r</span>
+                <span id="word2letter5">a</span>
+                <span id="word2letter6">t</span>
+                <span id="word2letter7">o</span>
+                <span id="word2letter8">r</span>
+              </span>
+            </h1>
           </div>
-        </div> 
+          <div id="thirdline">
+            <h2>Member of <a href="https://www.chiapassproductions.com">Chia Pass Productions</a></h2>
+          </div>
+        </div>
       </section>
-      <section class="pg2" id="about">
-        <p class="pgnumber">2.</p>
-        <h2>INT. Living Room</h2>
-        <p>The set is staged to achieve a more down to earth feel.</p>
-        <p class="charactercue">Interviewer</p>
-        <p class="dialogue">Could you please introduce yourself to the audience?</p>
-        <p>Jacklynn looks to the camera, not much of an audience.</p>
-        <p class="charactercue">Jacklynn</p>
-        <p class="dialogue">My name is Jacklynn Yan, I'm a VFX generalist and filmmaker.</p>
-        <p>The interviewer raises an eyebrow.</p>
-        <p class="charactercue">Interviewer</p>
-        <p class="dialogue">And where can people find your work?</p>
-        <p class="charactercue">Jacklynn</p>
-        <!--<div class="sketchframe">
-          <div class="sketch highlight"></div>
-        </div>-->
-        <p class="dialogue">This website is where you can find my <a href="blender.html">VFX work</a>, <a href="film.html">film projects</a>, and <a href="more.html">more</a>.</p>
+      <section class="textsection" id="about">
+        <div>
+          <p><span id="joke">A veritable Pacific Northwest film industry icon, </span>I specialize in <span class="highlight">3D VFX and other post production</span>, and I've filled many roles from Director of Photography to Production Assistant on various projects.</p>
+          <p>I'm currently attending Cornish College of the Arts at Seattle University. Working on a BFA in Film & Media.</p>
+          <p>Aside from video production, I do various other funny things to keep it interesting. This includes <a href="https://www.sillyserver.win/games">web design</a> with HTML, CSS and JS, tech repairs, and bookmaking at <a href="https://www.noreplypress.com">No Reply Press</a>.</p>
+        </div>
       </section>
-      <section class="pg2" id="contact">
-        <h2>EXT. Contact</h2>
-        <p class="charactercue">Narrator</p>
-        <p class="dialogue">You can contact me on instagram <a href="https://www.instagram.com/plantyfromblender/">@plantyfromblender</a>.</p>
-        <p class="charactercue">Narrator</p>
-        <p class="dialogue">Or email me at
-        <a href="mailto:contact@jacklynnyan.com">contact@jacklynnyan.com</a></p>
-        <!-- <div class="sketchframe">
-          <img class="sketch mailsketch" src="img/mail.png">
-        </div> -->
-        <h2>EXT. More</h2>
-        <p>To see more work, check out
-        <a href="https://www.youtube.com/@plantyfromblender">my YouTube</a></p>
+      <section class="textsection" id="skills">
+        <h3>Skills</h3>
+        <div class="boxes">
+          <div class="boxbox">
+            <p class="itemtitle">Video Editing</p>
+            <p>DaVinci Resolve, Final Cut Pro, Premiere Pro</p>
+          </div>
+          <div class="boxbox">
+            <p class="itemtitle">3D Modeling and Animation</p>
+            <p>Blender, Maya, Substance Painter</p>
+          </div>
+          <div class="boxbox">
+            <p class="itemtitle">VFX</p>
+            <p>Blender, Fusion, JangaFX Suite, Motion 5</p>
+          </div>
+          <div class="boxbox">
+            <p class="itemtitle">Camera Operator</p>
+            <p>Blackmagic Cinema Cameras, Panasonic EVA-1, Canon C500, Canon 5D, Sony a7S III</p>
+          </div>
+          <div class="boxbox">
+            <p class="itemtitle">Sound Mixing</p>
+            <p>Zoom Recorders, Lav Microphones, Boom Operator</p>
+            <p>AVID Pro Tools, Logic Pro</p>
+          </div>
+        </div>
+      </section>
+      <section class="textsection" id="experience">
+        <h3>Experience</h3>
+        <div class="boxes">
+          <!-- <a href=""> -->
+            <div class="boxbox">
+              <p class="itemtitle">Things Fall Apart</p>
+              <p>Michael Curtis (February 2025)</p>
+              <p>Director of Photography</p>
+            </div>
+          <!-- </a> -->
+          <!-- <a href=""> -->
+            <div class="boxbox">
+              <p class="itemtitle">Latin with a Big L</p>
+              <p>Felipa Silva-Madrigal (February 2025)</p>
+              <p>Assistant Director</p>
+            </div>
+          <!-- </a> -->
+          <!-- <a href=""> -->
+            <div class="boxbox">
+              <p class="itemtitle">Dinner with a Vampire</p>
+              <p>Michael Curtis (December 2024)</p>
+              <p>Sound Mixer, Editor</p>
+            </div>
+          <!-- </a> -->
+          <a href="https://www.youtube.com/watch?v=mWu19pzp1kY">
+            <div class="boxbox">
+              <p class="itemtitle">The Iron Goat</p>
+              <p>Maximilian Monson (October 2024)</p>
+              <p>2nd AC</p>
+            </div>
+          </a>
+          <a href="https://youtu.be/dRBv1JkCdxU?si=6OrlR8UH5elteBaQ">
+            <div class="boxbox">
+              <p class="itemtitle">M.O.B</p>
+              <p>Jacklynn Yan (October 2024)</p>
+              <p>Director</p>
+            </div>
+          </a>
+          <!-- <a href=""> -->
+            <div class="boxbox">
+              <p class="itemtitle">Deepfake MV</p>
+              <p>Dahyun Kim (April 2024)</p>
+              <p>Production Asistant</p>
+            </div>
+          <!-- </a> -->
+          <a href="https://youtu.be/PBfIHB_keug?si=2WLZNkocTYKrIi0k">
+            <div class="boxbox">
+              <p class="itemtitle">The Light in Their Eyes</p>
+              <p>Melissa DiGiovine (October 2023)</p>
+              <p>Digital Imaging Technician</p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="textsection" id="achievements">
+        <h3>Achievements</h3>
+        <div class="boxes">
+          <div class="boxbox">
+            <p class="itemtitle">SEA-TAC Installation</p>
+            <p>Work showcased at SEA-TAC video installation. (October 2024)</p>
+          </div>
+          <div class="boxbox">
+            <p class="itemtitle">Silver Screaming Film Festival</p>
+            <p>M.O.B was shown at the 4th Annual Silver Screaming Film Festival. (October 2024)</p>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
       <div class="centered">
-        <button class="buttonmedium" onClick="topFunction()">back to top
-        </button>
+        <div class="footerlink">
+          <a href="https://www.youtube.com/@plantyfromblender">YouTube</a>
+        </div>
+        <div class="footerlink">
+          <a href="https://www.instagram.com/plantyfromblender">Instagram</a>
+        </div>
+        <div class="footerlink">
+          <a href="https://www.chiapassproductions.com">Chia Pass Productions</a>
+        </div>
       </div>
-      <script src="/js/script.js"></script>
+      <!-- <script src="/js/header.js"></script> -->
+      <script src="/js/gsap.min.js"></script>
+      <script src="/js/TextPlugin.min.js"></script>
+      <script src="/js/titleanimation.js"></script>
+      <script src="/js/joke.js"></script>
     </footer>
-    </div>
   </body>
 </html>
