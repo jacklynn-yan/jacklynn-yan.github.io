@@ -1,0 +1,50 @@
+@media (prefers-color-scheme:light) {
+  :root {
+    --backgroundimage: url(/img/title/title-jacklynn-light.webp);
+  }
+}
+@media (prefers-color-scheme:dark) {
+  :root {
+    --backgroundimage: url(/img/title/title-jacklynn-dark.webp);
+  }
+}
+@media (orientation:landscape) {
+  :root {
+    --titlewidth: 30vw;
+  }
+}
+@media (orientation:portrait) {
+  :root {
+    --titlewidth: 15em;
+  }
+}
+#title {
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0;
+}
+#title::before {
+  content: '';
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-image: var(--backgroundimage);
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  opacity: 0.7;
+}
+#title-text h1 {
+  font-size: 3em;
+  margin: 0;
+  padding-bottom: 0.25em;
+  text-align: center;
+}
+#title-text p {
+  margin: 0.5em;
+  text-align: center;
+}
+#title-text {
+  z-index: 1;
+}
